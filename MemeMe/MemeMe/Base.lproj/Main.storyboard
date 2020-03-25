@@ -35,7 +35,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lns-0S-VLC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="774"/>
+            <point key="canvasLocation" x="138" y="782"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jcp-Db-Iov">
+            <objects>
+                <viewController id="WX0-Ev-NHs" customClass="ViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yQY-md-wSs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="EuI-bW-Xi0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPw-EG-q3M" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872" y="130"/>
         </scene>
     </scenes>
 </document>
