@@ -14,13 +14,70 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3mS-Aw-FAV">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem title="Pick" width="220.5" id="Wv5-kU-Y4h">
+                                        <connections>
+                                            <action selector="pickAnImageAlbum:" destination="BYZ-38-t0r" id="3x1-VQ-kSQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Camera" width="448" id="ggq-wv-sdu">
+                                        <connections>
+                                            <action selector="pickAnImageFromCamera:" destination="BYZ-38-t0r" id="2bC-Gy-e3g"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="68r-WN-38o">
+                                <rect key="frame" x="0.0" y="215" width="414" height="466"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="466" id="4xs-ai-RsI"/>
+                                    <constraint firstAttribute="width" constant="414" id="OIz-ZZ-tpt"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fbj-yF-rmI">
+                                <rect key="frame" x="28" y="248" width="354" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="354" id="t86-vS-jE7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="URh-6w-l7W">
+                                <rect key="frame" x="28" y="617" width="353" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="353" id="G7C-eE-gMt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3mS-Aw-FAV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Fn-aT-psa"/>
+                            <constraint firstItem="URh-6w-l7W" firstAttribute="top" secondItem="68r-WN-38o" secondAttribute="bottom" constant="-64" id="1Or-TF-n8y"/>
+                            <constraint firstAttribute="bottom" secondItem="3mS-Aw-FAV" secondAttribute="bottom" constant="34" id="9Me-fl-AeQ"/>
+                            <constraint firstItem="68r-WN-38o" firstAttribute="top" secondItem="fbj-yF-rmI" secondAttribute="bottom" constant="-67" id="Y9w-Iy-2No"/>
+                            <constraint firstItem="fbj-yF-rmI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-2" id="Zwx-r8-SeM"/>
+                            <constraint firstItem="68r-WN-38o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i4I-wD-qca"/>
+                            <constraint firstItem="68r-WN-38o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="osp-dm-IhY"/>
+                            <constraint firstItem="3mS-Aw-FAV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tOu-5h-8Hc"/>
+                            <constraint firstItem="URh-6w-l7W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-2.5" id="thl-uf-s0H"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomTextField" destination="URh-6w-l7W" id="dXs-5N-9HU"/>
+                        <outlet property="cameraButton" destination="ggq-wv-sdu" id="Vue-8O-ZcO"/>
+                        <outlet property="imagePickerView" destination="68r-WN-38o" id="XhX-ao-okj"/>
+                        <outlet property="topTextField" destination="fbj-yF-rmI" id="eGr-vT-zm2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="130"/>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Raq-oX-70j">
