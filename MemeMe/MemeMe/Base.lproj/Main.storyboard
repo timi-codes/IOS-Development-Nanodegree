@@ -7,19 +7,19 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Meme Me View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MemeMeViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="68r-WN-38o">
-                                <rect key="frame" x="0.0" y="262.5" width="414" height="371"/>
+                                <rect key="frame" x="0.0" y="283" width="414" height="332"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="bJR-kE-AMZ"/>
-                                    <constraint firstAttribute="height" constant="371" id="jJD-lj-Mjt"/>
+                                    <constraint firstAttribute="height" constant="332" id="jJD-lj-Mjt"/>
                                 </constraints>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3mS-Aw-FAV">
@@ -42,7 +42,7 @@
                                 <color key="barTintColor" red="0.2470588235" green="0.64705882349999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="URh-6w-l7W">
-                                <rect key="frame" x="50" y="562" width="314" height="34"/>
+                                <rect key="frame" x="50" y="538" width="314" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="314" id="osU-m9-xbU"/>
@@ -54,7 +54,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <color key="backgroundColor" red="0.24705882352941178" green="0.6470588235294118" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
-                                    <barButtonItem title="Share" id="YIz-J2-Xea">
+                                    <barButtonItem systemItem="action" id="YIz-J2-Xea">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="sharePressed:" destination="BYZ-38-t0r" id="CD8-dQ-mey"/>
@@ -64,7 +64,7 @@
                                 <color key="barTintColor" red="0.24705882352941178" green="0.6470588235294118" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </toolbar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fbj-yF-rmI">
-                                <rect key="frame" x="50" y="305" width="314" height="34"/>
+                                <rect key="frame" x="50" y="325" width="314" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="314" id="rVf-4Q-b4J"/>
@@ -88,9 +88,9 @@
                             <constraint firstItem="68r-WN-38o" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bD6-FE-xon"/>
                             <constraint firstItem="3mS-Aw-FAV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="d0N-ri-UUK"/>
                             <constraint firstItem="XT0-au-pot" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fvY-Tm-K1u"/>
-                            <constraint firstItem="68r-WN-38o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xWp-o0-5QX"/>
+                            <constraint firstItem="68r-WN-38o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="1" id="xWp-o0-5QX"/>
                             <constraint firstItem="68r-WN-38o" firstAttribute="top" secondItem="fbj-yF-rmI" secondAttribute="bottom" constant="-76.5" id="zAw-El-YRj"/>
-                            <constraint firstItem="URh-6w-l7W" firstAttribute="top" secondItem="68r-WN-38o" secondAttribute="bottom" constant="-71.5" id="zJK-eJ-Pm0"/>
+                            <constraint firstItem="URh-6w-l7W" firstAttribute="top" secondItem="68r-WN-38o" secondAttribute="bottom" constant="-77" id="zJK-eJ-Pm0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

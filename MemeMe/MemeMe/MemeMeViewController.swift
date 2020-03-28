@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MemeMeViewController: UIViewController {
     
     @IBOutlet weak var imagePickerView: UIImageView!
     @IBOutlet weak var cameraButton: UIBarButtonItem!
@@ -32,18 +32,15 @@ class ViewController: UIViewController {
         topTextField.text = "TOP"
         bottomTextField.text = "BOTTOM"
         
-        topTextField.defaultTextAttributes = memeTextAttributes
-        bottomTextField.defaultTextAttributes = memeTextAttributes
-        
-        topTextField.textAlignment = .center
-        bottomTextField.textAlignment = .center
-        
-        topTextField.borderStyle = .none
-        bottomTextField.borderStyle = .none
-
-        topTextField.delegate = self
-        bottomTextField.delegate = self
-
+        setUpTextField(topTextField)
+        setUpTextField(bottomTextField)
+    }
+    
+    func setUpTextField(_ textField: UITextField){
+        textField.defaultTextAttributes = memeTextAttributes
+        textField.textAlignment = .center
+        textField.borderStyle = .none
+        textField.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,31 +57,37 @@ class ViewController: UIViewController {
     }
 
     @IBAction func pickAnImageAlbum(_ sender: Any) {
-        let pickerController = UIImagePickerController()
-        pickerController.delegate = self
-        pickerController.sourceType = .photoLibrary
-        present(pickerController, animated: true, completion: nil)
+        presentImagePickerControllerWith(.photoLibrary)
     }
     
     @IBAction func pickAnImageFromCamera(_ sender: Any) {
+        presentImagePickerControllerWith(.camera)
+    }
+    
+    func presentImagePickerControllerWith(_ sourceType: UIImagePickerController.SourceType ){
         let cameraController = UIImagePickerController()
         cameraController.delegate = self
-        cameraController.sourceType = .camera
+        cameraController.sourceType = sourceType
         present(cameraController, animated: true, completion: nil)
     }
     
     @IBAction func sharePressed(_ sender: Any) {
         let meme = generateMemedImage()
         let activityViewController = UIActivityViewController(activityItems: [meme], applicationActivities: nil)
+        
         activityViewController.completionWithItemsHandler = {(activityType: UIActivity.ActivityType?, completed: Bool, returnedItems: [Any]?, error: Error?) in
-            self.memedImage = meme
-            self.save()
+              if completed {
+                  self.memedImage = meme
+                  self.save()
+              }
         }
         present(activityViewController, animated: true)
     }
     
     @objc func keyboardWillShow(_ notification:Notification) {
-        view.frame.origin.y -= getKeyboardHeight(notification)
+        if bottomTextField.isFirstResponder {
+            view.frame.origin.y -= getKeyboardHeight(notification)
+        }
     }
     
     @objc func keyboardWillHide(_ notification:Notification) {
@@ -116,8 +119,8 @@ class ViewController: UIViewController {
         shareToolBar.isHidden = true
         imagePickerToolBar.isHidden = true
         // Render view to an image
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        view.drawHierarchy(in: self.view.frame, afterScreenUpdates: true)
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.drawHierarchy(in: view.frame, afterScreenUpdates: true)
         let memedImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
@@ -129,13 +132,12 @@ class ViewController: UIViewController {
 }
 
 
-extension ViewController : UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension MemeMeViewController : UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         if let image = info[.originalImage] as? UIImage {
             imagePickerView.image = image
-            imagePickerView.contentMode = .scaleToFill
             shareButton.isEnabled = true
         }
         picker.dismiss(animated: true, completion: nil)
