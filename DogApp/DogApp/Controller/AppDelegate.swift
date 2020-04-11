@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MemeMe
+//  DogApp
 //
-//  Created by Timi Tejumola on 18/03/2020.
+//  Created by Timi Tejumola on 10/04/2020.
 //  Copyright © 2020 Timi Tejumola. All rights reserved.
 //
 

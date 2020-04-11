@@ -7,29 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C9DB93A2422BE140074775A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DB9392422BE140074775A /* AppDelegate.swift */; };
-		1C9DB93E2422BE140074775A /* MemeMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DB93D2422BE140074775A /* MemeMeViewController.swift */; };
-		1C9DB9412422BE140074775A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9DB93F2422BE140074775A /* Main.storyboard */; };
-		1C9DB9432422BE170074775A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9DB9422422BE170074775A /* Assets.xcassets */; };
-		1C9DB9462422BE170074775A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9DB9442422BE170074775A /* LaunchScreen.storyboard */; };
-		1CD842C4242D650C0055E119 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD842C3242D650C0055E119 /* Meme.swift */; };
-		1CD842C6242E69230055E119 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD842C5242E69230055E119 /* SceneDelegate.swift */; };
+		1CF42B3B24400C5300667CB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF42B3A24400C5300667CB1 /* AppDelegate.swift */; };
+		1CF42B3D24400C5300667CB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF42B3C24400C5300667CB1 /* SceneDelegate.swift */; };
+		1CF42B3F24400C5300667CB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF42B3E24400C5300667CB1 /* ViewController.swift */; };
+		1CF42B4224400C5300667CB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF42B4024400C5300667CB1 /* Main.storyboard */; };
+		1CF42B4424400C5800667CB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF42B4324400C5800667CB1 /* Assets.xcassets */; };
+		1CF42B4724400C5800667CB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF42B4524400C5800667CB1 /* LaunchScreen.storyboard */; };
+		1CF42B542440132A00667CB1 /* DogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF42B532440132A00667CB1 /* DogAPI.swift */; };
+		1CF42B5624401FA900667CB1 /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF42B5524401FA900667CB1 /* DogImage.swift */; };
+		1CF42B582442684B00667CB1 /* BreedsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF42B572442684B00667CB1 /* BreedsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C9DB9362422BE140074775A /* MemeMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C9DB9392422BE140074775A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C9DB93D2422BE140074775A /* MemeMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMeViewController.swift; sourceTree = "<group>"; };
-		1C9DB9402422BE140074775A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1C9DB9422422BE170074775A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1C9DB9452422BE170074775A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1C9DB9472422BE170074775A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CD842C3242D650C0055E119 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
-		1CD842C5242E69230055E119 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1CF42B3724400C5300667CB1 /* DogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF42B3A24400C5300667CB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CF42B3C24400C5300667CB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1CF42B3E24400C5300667CB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1CF42B4124400C5300667CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CF42B4324400C5800667CB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CF42B4624400C5800667CB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CF42B4824400C5800667CB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CF42B532440132A00667CB1 /* DogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPI.swift; sourceTree = "<group>"; };
+		1CF42B5524401FA900667CB1 /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
+		1CF42B572442684B00667CB1 /* BreedsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1C9DB9332422BE140074775A /* Frameworks */ = {
+		1CF42B3424400C5300667CB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +43,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C9DB92D2422BE140074775A = {
+		1CF42B2E24400C5200667CB1 = {
 			isa = PBXGroup;
 			children = (
-				1C9DB9382422BE140074775A /* MemeMe */,
-				1C9DB9372422BE140074775A /* Products */,
+				1CF42B3924400C5300667CB1 /* DogApp */,
+				1CF42B3824400C5300667CB1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1C9DB9372422BE140074775A /* Products */ = {
+		1CF42B3824400C5300667CB1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1C9DB9362422BE140074775A /* MemeMe.app */,
+				1CF42B3724400C5300667CB1 /* DogApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1C9DB9382422BE140074775A /* MemeMe */ = {
+		1CF42B3924400C5300667CB1 /* DogApp */ = {
 			isa = PBXGroup;
 			children = (
-				1CD842C5242E69230055E119 /* SceneDelegate.swift */,
-				1C9DB9392422BE140074775A /* AppDelegate.swift */,
-				1C9DB93D2422BE140074775A /* MemeMeViewController.swift */,
-				1C9DB93F2422BE140074775A /* Main.storyboard */,
-				1C9DB9422422BE170074775A /* Assets.xcassets */,
-				1C9DB9442422BE170074775A /* LaunchScreen.storyboard */,
-				1C9DB9472422BE170074775A /* Info.plist */,
-				1CD842C3242D650C0055E119 /* Meme.swift */,
+				1CF42B4E24400C6E00667CB1 /* Model */,
+				1CF42B5224400CCD00667CB1 /* Controller */,
+				1CF42B4F24400C8D00667CB1 /* View */,
+				1CF42B4824400C5800667CB1 /* Info.plist */,
 			);
-			path = MemeMe;
+			path = DogApp;
+			sourceTree = "<group>";
+		};
+		1CF42B4E24400C6E00667CB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CF42B532440132A00667CB1 /* DogAPI.swift */,
+				1CF42B5524401FA900667CB1 /* DogImage.swift */,
+				1CF42B572442684B00667CB1 /* BreedsResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CF42B4F24400C8D00667CB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1CF42B4024400C5300667CB1 /* Main.storyboard */,
+				1CF42B4324400C5800667CB1 /* Assets.xcassets */,
+				1CF42B4524400C5800667CB1 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1CF42B5224400CCD00667CB1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1CF42B3A24400C5300667CB1 /* AppDelegate.swift */,
+				1CF42B3C24400C5300667CB1 /* SceneDelegate.swift */,
+				1CF42B3E24400C5300667CB1 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1C9DB9352422BE140074775A /* MemeMe */ = {
+		1CF42B3624400C5300667CB1 /* DogApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1C9DB94A2422BE170074775A /* Build configuration list for PBXNativeTarget "MemeMe" */;
+			buildConfigurationList = 1CF42B4B24400C5800667CB1 /* Build configuration list for PBXNativeTarget "DogApp" */;
 			buildPhases = (
-				1C9DB9322422BE140074775A /* Sources */,
-				1C9DB9332422BE140074775A /* Frameworks */,
-				1C9DB9342422BE140074775A /* Resources */,
+				1CF42B3324400C5300667CB1 /* Sources */,
+				1CF42B3424400C5300667CB1 /* Frameworks */,
+				1CF42B3524400C5300667CB1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MemeMe;
-			productName = MemeMe;
-			productReference = 1C9DB9362422BE140074775A /* MemeMe.app */;
+			name = DogApp;
+			productName = DogApp;
+			productReference = 1CF42B3724400C5300667CB1 /* DogApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1C9DB92E2422BE140074775A /* Project object */ = {
+		1CF42B2F24400C5300667CB1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Timi Tejumola";
 				TargetAttributes = {
-					1C9DB9352422BE140074775A = {
+					1CF42B3624400C5300667CB1 = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
 			};
-			buildConfigurationList = 1C9DB9312422BE140074775A /* Build configuration list for PBXProject "MemeMe" */;
+			buildConfigurationList = 1CF42B3224400C5300667CB1 /* Build configuration list for PBXProject "DogApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +143,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 1C9DB92D2422BE140074775A;
-			productRefGroup = 1C9DB9372422BE140074775A /* Products */;
+			mainGroup = 1CF42B2E24400C5200667CB1;
+			productRefGroup = 1CF42B3824400C5300667CB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1C9DB9352422BE140074775A /* MemeMe */,
+				1CF42B3624400C5300667CB1 /* DogApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1C9DB9342422BE140074775A /* Resources */ = {
+		1CF42B3524400C5300667CB1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C9DB9462422BE170074775A /* LaunchScreen.storyboard in Resources */,
-				1C9DB9432422BE170074775A /* Assets.xcassets in Resources */,
-				1C9DB9412422BE140074775A /* Main.storyboard in Resources */,
+				1CF42B4724400C5800667CB1 /* LaunchScreen.storyboard in Resources */,
+				1CF42B4424400C5800667CB1 /* Assets.xcassets in Resources */,
+				1CF42B4224400C5300667CB1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1C9DB9322422BE140074775A /* Sources */ = {
+		1CF42B3324400C5300667CB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C9DB93E2422BE140074775A /* MemeMeViewController.swift in Sources */,
-				1CD842C4242D650C0055E119 /* Meme.swift in Sources */,
-				1C9DB93A2422BE140074775A /* AppDelegate.swift in Sources */,
-				1CD842C6242E69230055E119 /* SceneDelegate.swift in Sources */,
+				1CF42B3F24400C5300667CB1 /* ViewController.swift in Sources */,
+				1CF42B5624401FA900667CB1 /* DogImage.swift in Sources */,
+				1CF42B3B24400C5300667CB1 /* AppDelegate.swift in Sources */,
+				1CF42B3D24400C5300667CB1 /* SceneDelegate.swift in Sources */,
+				1CF42B582442684B00667CB1 /* BreedsResponse.swift in Sources */,
+				1CF42B542440132A00667CB1 /* DogAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1C9DB93F2422BE140074775A /* Main.storyboard */ = {
+		1CF42B4024400C5300667CB1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1C9DB9402422BE140074775A /* Base */,
+				1CF42B4124400C5300667CB1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1C9DB9442422BE170074775A /* LaunchScreen.storyboard */ = {
+		1CF42B4524400C5800667CB1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1C9DB9452422BE170074775A /* Base */,
+				1CF42B4624400C5800667CB1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +202,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1C9DB9482422BE170074775A /* Debug */ = {
+		1CF42B4924400C5800667CB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +262,7 @@
 			};
 			name = Debug;
 		};
-		1C9DB9492422BE170074775A /* Release */ = {
+		1CF42B4A24400C5800667CB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,38 +316,36 @@
 			};
 			name = Release;
 		};
-		1C9DB94B2422BE170074775A /* Debug */ = {
+		1CF42B4C24400C5800667CB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4D76457L5H;
-				INFOPLIST_FILE = MemeMe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				INFOPLIST_FILE = DogApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = timicodes.MemeMe;
+				PRODUCT_BUNDLE_IDENTIFIER = timicodes.DogApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1C9DB94C2422BE170074775A /* Release */ = {
+		1CF42B4D24400C5800667CB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4D76457L5H;
-				INFOPLIST_FILE = MemeMe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				INFOPLIST_FILE = DogApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = timicodes.MemeMe;
+				PRODUCT_BUNDLE_IDENTIFIER = timicodes.DogApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,25 +355,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1C9DB9312422BE140074775A /* Build configuration list for PBXProject "MemeMe" */ = {
+		1CF42B3224400C5300667CB1 /* Build configuration list for PBXProject "DogApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C9DB9482422BE170074775A /* Debug */,
-				1C9DB9492422BE170074775A /* Release */,
+				1CF42B4924400C5800667CB1 /* Debug */,
+				1CF42B4A24400C5800667CB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1C9DB94A2422BE170074775A /* Build configuration list for PBXNativeTarget "MemeMe" */ = {
+		1CF42B4B24400C5800667CB1 /* Build configuration list for PBXNativeTarget "DogApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C9DB94B2422BE170074775A /* Debug */,
-				1C9DB94C2422BE170074775A /* Release */,
+				1CF42B4C24400C5800667CB1 /* Debug */,
+				1CF42B4D24400C5800667CB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1C9DB92E2422BE140074775A /* Project object */;
+	rootObject = 1CF42B2F24400C5300667CB1 /* Project object */;
 }
